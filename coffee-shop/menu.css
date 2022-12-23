@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #DAB49D;
+}
+
+.beverages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.back{
+    padding: 10px;
+    border-radius: 0;
+    border: none;
+    background-color: #79544a;
+    color: #c9b5b0;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 1s;
+}
+.back:hover{
+    background-color: #c9b5b0;
+    color: #79544a;
+}
+.bev-header{
+    width: 100%;
+    height: 8rem;
+    background-color: #4e301e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+.bev-title{
+    font-size: xx-large;
+    color: aliceblue;
+}
+
+.beverages-gallery{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    width: 90%;
+    height: 1500px;
+    margin: 0 1%;
+}
+.beverages-gallery .bev-item{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bev-item .img{
+    width: 100%;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bev-item .text{
+    width: 100%;
+    height: 30%;
+    background-color: #f7f5f3;
+}
+
+.am-img{
+    background-image: url(/menu/americano.jpg);
+}
+.ess-img{
+    background-image: url(/menu/espresso.jpg);
+}
+.ic-c-img{
+    background-image: url(/menu/iced-coffee.jpg);
+}
+.lat-img{
+    background-image: url(/menu/latte.jpg);
+}
+.cap-img{
+    background-image: url(/menu/capuccino.jpg);
+}
+.bob-img{
+    background-image: url(/menu/boba-tea.jpg);
+}
+.moc-img{
+    background-image: url(/menu/mocha.jpg);
+}
+.tea-img{
+    background-image: url(/menu/tea.jpg);
+}
+.ic-t-img{
+    background-image: url(/menu/iced-tea.jpg);
+}
+
+
+.new-window{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4e301eb2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item{
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-item .menu-item-pic{
+    position: fixed;
+    width: 40%;
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: #4e301e;
+}
+
+.menu-item .menu-item-text{
+    width: 20%;
+    height: 60%;
+    right: 20%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
